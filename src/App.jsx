@@ -1,12 +1,20 @@
-
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
+import HowItWorksSection from "./components/HowItWorksSection";
+import FaqSection from "./components/FaqSection";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="container">
-      <h1>Download Center</h1>
-      <p>Click the button below to download your file.</p>
-      <a href="/sample-file.txt" download className="btn">Download File</a>
-    </div>
+    <>
+      <Navbar />
+      <HeroSection />
+      <AboutSection />
+      <HowItWorksSection />
+      <FaqSection />
+      <Footer />
+    </>
   );
 }
